@@ -1,19 +1,94 @@
 body {
-    background-color: grey;
+    background: linear-gradient(rgb(48, 47, 47) 10%, rgb(70, 69, 69));
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     height: 100vh;
+    gap: 30px;
+    overflow: hidden;
+    margin: 0;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+ 
 }
 
 * {
     box-sizing: border-box;
 }
 
+
+.square {
+    border: thin solid rgba(0, 0, 0, 0.3);
+}
+
 .container {
-    min-height: 400px;
-    min-width: 400px;
+    min-height: 600px;
+    min-width: 600px;
     display: grid; 
-    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0 0 6px 10px rgb(0, 0, 0, 0.3) ;
+}
+
+button {
+    min-width: 150px;
+    height: 2rem;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0, 0.3) ;
+    cursor: pointer;
+
+
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+    
+}
+
+.clear {
+    margin-top: 30px;
+}
+
+.other {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.range {
+    cursor: pointer;
+    background: rgb(236, 236, 236);
+    appearance: none;
+    height: 20px;
+    outline: black;
+    box-shadow: 0 0 10px 2px rgb(0, 0, 0, 0.3) ;
+
+}
+
+.input-text {
+    color: white;
+    font-size: 30px;
+    text-shadow: 1px 2px 3px  black;
+    margin: 20px 0px 0px 0px;
+}
+
+.range::-webkit-slider-thumb{
+    appearance: none;
+    height: 20px;
+    width: 20px;
+    background: black;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 50px;
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-shadow: 1px 2px 3px  black;
 }

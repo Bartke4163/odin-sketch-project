@@ -28,7 +28,7 @@ range.addEventListener('click', () => {
     clearSquares()
     removeSquares()
     grid()
-    xddd()
+    coloring()
 })
 
 range.addEventListener('click', () => {
@@ -49,7 +49,7 @@ function grid(){
 }
 
 grid();
-xddd()  
+coloring()  
 
 clear.addEventListener('click', clearSquares)
 
@@ -75,6 +75,3 @@ function coloring(){
 
 
 
-function xddd(){
-    container.addEventListener("mousedown", coloring)
-}
